@@ -44,6 +44,10 @@ function About() {
               object-cover
             "
 
+            loading="lazy"
+
+            decoding="async"
+
           />
 
 
@@ -76,8 +80,6 @@ function About() {
 
 
         </div>
-
-
 
 
 
@@ -141,8 +143,6 @@ function About() {
             trees and beautiful outdoor spaces.
 
           </p>
-
-
 
 
 

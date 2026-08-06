@@ -2,17 +2,10 @@ import hero1 from "../assets/images/hero1.webp";
 import hero2 from "../assets/images/hero2.webp";
 import hero3 from "../assets/images/hero3.webp";
 
-
 function Hero() {
-
-
   return (
-
-
     <section
-
       id="home"
-
       className="
         relative
         min-h-screen
@@ -27,14 +20,8 @@ function Hero() {
         to-emerald-100
         scroll-mt-24
       "
-
     >
-
-
-
       {/* Background Shapes */}
-
-
       <div
         className="
           absolute
@@ -48,8 +35,6 @@ function Hero() {
           blur-3xl
         "
       ></div>
-
-
 
       <div
         className="
@@ -65,13 +50,7 @@ function Hero() {
         "
       ></div>
 
-
-
-
-
-
       <div
-
         className="
           relative
           z-10
@@ -82,22 +61,10 @@ function Hero() {
           gap-12
           items-center
         "
-
       >
-
-
-
-
-
         {/* Content */}
-
-
-
         <div>
-
-
           <span
-
             className="
               inline-block
               bg-green-100
@@ -110,19 +77,11 @@ function Hero() {
               tracking-wider
               mb-6
             "
-
           >
-
             PROFESSIONAL TREE CARE
-
           </span>
 
-
-
-
-
           <h1
-
             className="
               text-5xl
               lg:text-6xl
@@ -130,30 +89,15 @@ function Hero() {
               leading-tight
               text-green-950
             "
-
           >
-
             Protecting Trees.
-
             <br />
-
-
             <span className="text-green-700">
-
               Creating Beautiful Landscapes.
-
             </span>
-
-
           </h1>
 
-
-
-
-
-
           <p
-
             className="
               mt-6
               text-lg
@@ -161,48 +105,28 @@ function Hero() {
               max-w-xl
               leading-relaxed
             "
-
           >
-
             Guardian Tree Care provides reliable tree removal,
             trimming, pruning, and emergency tree services.
             Our experts keep your property safe and beautiful.
-
           </p>
 
-
-
-
-
-
-
           <div
-
             className="
               flex
               gap-4
               mt-8
               flex-wrap
             "
-
           >
-
-
-
             <button
-
               onClick={() => {
-
                 document
-                .getElementById("contact")
-                ?.scrollIntoView({
-
-                  behavior:"smooth"
-
-                });
-
+                  .getElementById("contact")
+                  ?.scrollIntoView({
+                    behavior: "smooth",
+                  });
               }}
-
               className="
                 bg-green-700
                 text-white
@@ -213,21 +137,12 @@ function Hero() {
                 hover:bg-green-800
                 transition
               "
-
             >
-
               Get Free Quote
-
             </button>
 
-
-
-
-
             <a
-
               href="tel:+17165268741"
-
               className="
                 border-2
                 border-green-700
@@ -240,37 +155,14 @@ function Hero() {
                 hover:text-white
                 transition
               "
-
             >
-
               Call Now
-
             </a>
-
-
-
           </div>
-
-
-
         </div>
 
-
-
-
-
-
-
-
-
         {/* Image Collage */}
-
-
-
-
-
         <div
-
           className="
             relative
             h-[620px]
@@ -278,23 +170,11 @@ function Hero() {
             items-center
             justify-center
           "
-
         >
-
-
-
-
-
           {/* Left Image */}
-
-
-
           <img
-
             src={hero1}
-
             alt="Professional tree care service"
-
             className="
               absolute
               left-0
@@ -308,29 +188,14 @@ function Hero() {
               border-8
               border-white
             "
-
             loading="lazy"
-
+            decoding="async"
           />
 
-
-
-
-
-
-
-
-
-          {/* Center Image */}
-
-
-
+          {/* Center Image (LCP) */}
           <img
-
             src={hero2}
-
             alt="Tree maintenance work"
-
             className="
               relative
               z-20
@@ -342,29 +207,15 @@ function Hero() {
               border-8
               border-white
             "
-
             loading="eager"
-
+            fetchPriority="high"
+            decoding="async"
           />
 
-
-
-
-
-
-
-
-
           {/* Right Image */}
-
-
-
           <img
-
             src={hero3}
-
             alt="Beautiful landscape trees"
-
             className="
               absolute
               right-0
@@ -378,25 +229,12 @@ function Hero() {
               border-8
               border-white
             "
-
             loading="lazy"
-
+            decoding="async"
           />
 
-
-
-
-
-
-
-
-
           {/* Trust Badge */}
-
-
-
           <div
-
             className="
               absolute
               bottom-16
@@ -408,69 +246,29 @@ function Hero() {
               rounded-2xl
               shadow-xl
             "
-
           >
-
-
             <p
-
               className="
                 text-green-700
                 font-bold
               "
-
             >
-
               25+ Years
-
             </p>
 
-
-
             <p
-
               className="
                 text-sm
                 text-gray-600
               "
-
             >
-
               Trusted Tree Care
-
             </p>
-
-
-
           </div>
-
-
-
-
-
-
         </div>
-
-
-
-
-
-
-
       </div>
-
-
-
-
-
-
     </section>
-
-
   );
-
-
 }
-
 
 export default Hero;

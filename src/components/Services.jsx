@@ -159,6 +159,7 @@ function Services() {
               <div
                 key={index}
                 className={`
+
                   bg-white
                   rounded-[35px]
                   overflow-hidden
@@ -166,11 +167,13 @@ function Services() {
                   hover:-translate-y-3
                   transition
                   duration-300
+
                   ${
                     index % 2 === 1
                     ? "lg:mt-16"
                     : ""
                   }
+
                 `}
               >
 
@@ -188,8 +191,11 @@ function Services() {
 
 
                   <img
+
                     src={service.image}
+
                     alt={service.title}
+
                     className="
                       w-full
                       h-full
@@ -198,7 +204,13 @@ function Services() {
                       transition
                       duration-500
                     "
+
+                    loading="lazy"
+
+                    decoding="async"
+
                   />
+
 
 
 
@@ -284,7 +296,9 @@ function Services() {
                       transition
                     "
                   >
+
                     Learn More →
+
                   </button>
 
 
