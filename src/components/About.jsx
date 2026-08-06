@@ -27,11 +27,8 @@ function About() {
 
         {/* Image */}
 
-        <div
-          className="
-            relative
-          "
-        >
+        <div className="relative">
+
 
           <img
 
@@ -50,6 +47,7 @@ function About() {
           />
 
 
+
           <div
             className="
               absolute
@@ -64,13 +62,15 @@ function About() {
             "
           >
 
-            <h3 className="text-2xl font-bold">
+            <p className="text-2xl font-bold">
               25+
-            </h3>
+            </p>
+
 
             <p className="text-sm">
               Years Experience
             </p>
+
 
           </div>
 
@@ -81,7 +81,10 @@ function About() {
 
 
 
+
+
         {/* Content */}
+
 
         <div>
 
@@ -106,6 +109,7 @@ function About() {
 
 
 
+
           <h2 className="
             text-4xl
             lg:text-5xl
@@ -117,6 +121,7 @@ function About() {
             Trusted Tree Care Experts For Your Property
 
           </h2>
+
 
 
 
@@ -142,6 +147,7 @@ function About() {
 
 
 
+
           <div className="
             grid
             grid-cols-2
@@ -150,13 +156,15 @@ function About() {
           ">
 
 
+
             <div className="
               bg-green-50
               rounded-2xl
               p-5
             ">
 
-              <h3 className="
+
+              <p className="
                 text-3xl
                 font-bold
                 text-green-700
@@ -164,7 +172,8 @@ function About() {
 
                 10+
 
-              </h3>
+              </p>
+
 
 
               <p className="
@@ -177,7 +186,11 @@ function About() {
               </p>
 
 
+
             </div>
+
+
+
 
 
 
@@ -189,7 +202,8 @@ function About() {
               p-5
             ">
 
-              <h3 className="
+
+              <p className="
                 text-3xl
                 font-bold
                 text-green-700
@@ -197,7 +211,8 @@ function About() {
 
                 100%
 
-              </h3>
+              </p>
+
 
 
               <p className="
@@ -210,7 +225,9 @@ function About() {
               </p>
 
 
+
             </div>
+
 
 
           </div>
@@ -220,15 +237,22 @@ function About() {
 
 
 
+
           <button
 
             onClick={() => {
+
               document
               .getElementById("contact")
               ?.scrollIntoView({
+
                 behavior:"smooth"
+
               });
+
             }}
+
+            aria-label="Contact Guardian Tree Care"
 
             className="
               inline-block
@@ -242,6 +266,7 @@ function About() {
               hover:bg-green-800
               transition
             "
+
           >
 
             Learn More
@@ -251,7 +276,10 @@ function About() {
 
 
 
+
         </div>
+
+
 
 
       </div>

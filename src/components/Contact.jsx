@@ -1,31 +1,57 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 
 function Contact() {
 
 
+  const contactRef = useRef(null);
+
+  const [showForm, setShowForm] = useState(false);
+
+
+
   useEffect(() => {
 
 
-    const script = document.createElement("script");
+    const observer = new IntersectionObserver(
 
-    script.src = "https://link.kdlead.com/js/form_embed.js";
-
-    script.async = true;
+      ([entry]) => {
 
 
-    document.body.appendChild(script);
+        if(entry.isIntersecting){
+
+
+          setShowForm(true);
+
+          observer.disconnect();
+
+
+        }
+
+
+      },
+
+      {
+        threshold:0.2
+      }
+
+    );
 
 
 
-    return () => {
+    if(contactRef.current){
 
-      document.body.removeChild(script);
+      observer.observe(contactRef.current);
 
-    };
+    }
+
+
+
+    return () => observer.disconnect();
 
 
   },[]);
+
 
 
 
@@ -38,6 +64,8 @@ function Contact() {
     <section
 
       id="contact"
+
+      ref={contactRef}
 
       className="
         py-24
@@ -69,8 +97,7 @@ function Contact() {
 
 
 
-
-        {/* LEFT CONTENT */}
+        {/* Content */}
 
 
 
@@ -88,7 +115,6 @@ function Contact() {
               rounded-full
               text-sm
               font-bold
-              tracking-wider
             "
 
           >
@@ -101,13 +127,11 @@ function Contact() {
 
 
 
-
           <h2
 
             className="
               mt-5
               text-4xl
-              lg:text-5xl
               font-extrabold
               text-green-950
             "
@@ -122,109 +146,11 @@ function Contact() {
 
 
 
+          <p className="mt-5 text-gray-600">
 
-          <p
-
-            className="
-              mt-5
-              text-gray-600
-              text-lg
-              leading-relaxed
-            "
-
-          >
-
-            Contact our team today for professional tree
-            removal, trimming, pruning, and emergency
-            tree care services.
+            Contact our team today for professional tree services.
 
           </p>
-
-
-
-
-
-
-          <div
-
-            className="
-              mt-8
-              space-y-4
-            "
-
-          >
-
-
-
-
-
-            <div
-
-              className="
-                bg-white
-                p-5
-                rounded-2xl
-                shadow-sm
-              "
-
-            >
-
-              <h3 className="font-bold text-green-700">
-
-                Phone
-
-              </h3>
-
-
-              <p className="text-gray-600">
-
-                +1 716-526-8741
-
-              </p>
-
-
-            </div>
-
-
-
-
-
-
-
-            <div
-
-              className="
-                bg-white
-                p-5
-                rounded-2xl
-                shadow-sm
-              "
-
-            >
-
-              <h3 className="font-bold text-green-700">
-
-                Email
-
-              </h3>
-
-
-              <p className="text-gray-600">
-
-                info@guardiantreecare.com
-
-              </p>
-
-
-            </div>
-
-
-
-
-
-          </div>
-
-
 
 
 
@@ -242,7 +168,6 @@ function Contact() {
 
 
 
-
         <div
 
           className="
@@ -257,74 +182,63 @@ function Contact() {
 
 
 
-          <iframe
+          {
 
-            src="https://link.kdlead.com/widget/form/DqptHnj0Yy2El4MSiCDA"
-
-
-            style={{
-
-              width:"100%",
-
-              height:"877px",
-
-              border:"none",
-
-              borderRadius:"8px"
-
-            }}
+            showForm ? (
 
 
+              <iframe
 
-            id="inline-DqptHnj0Yy2El4MSiCDA"
+                src="https://link.kdlead.com/widget/form/DqptHnj0Yy2El4MSiCDA"
 
+                title="Guardian Tree Care Contact Form"
 
+                loading="lazy"
 
-            data-layout='{"id":"INLINE"}'
+                scrolling="no"
 
+                className="
+                  w-full
+                  border-0
+                  overflow-hidden
+                "
 
+                style={{
+                  height:"820px"
+                }}
 
-            data-trigger-type="alwaysShow"
+              ></iframe>
 
 
 
-            data-activation-type="alwaysActivated"
+            ) : (
 
 
+              <div
 
-            data-deactivation-type="neverDeactivate"
+                className="
+                  h-[820px]
+                  flex
+                  items-center
+                  justify-center
+                  text-gray-500
+                "
 
+              >
 
+                Loading form...
 
-            data-form-name="Form 0"
-
-
-
-            data-height="877"
-
-
-
-            data-layout-iframe-id="inline-DqptHnj0Yy2El4MSiCDA"
-
-
-
-            data-form-id="DqptHnj0Yy2El4MSiCDA"
+              </div>
 
 
-
-            title="Guardian Tree Care Contact Form"
-
+            )
 
 
-          ></iframe>
-
+          }
 
 
 
         </div>
-
-
-
 
 
 
@@ -335,11 +249,11 @@ function Contact() {
 
 
 
-
     </section>
 
 
   );
+
 
 }
 

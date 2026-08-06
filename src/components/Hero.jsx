@@ -5,10 +5,14 @@ import hero3 from "../assets/images/hero3.webp";
 
 function Hero() {
 
+
   return (
 
+
     <section
+
       id="home"
+
       className="
         relative
         min-h-screen
@@ -23,7 +27,9 @@ function Hero() {
         to-emerald-100
         scroll-mt-24
       "
+
     >
+
 
 
       {/* Background Shapes */}
@@ -63,7 +69,9 @@ function Hero() {
 
 
 
+
       <div
+
         className="
           relative
           z-10
@@ -74,18 +82,22 @@ function Hero() {
           gap-12
           items-center
         "
+
       >
 
 
 
 
-        {/* CONTENT */}
+
+        {/* Content */}
+
 
 
         <div>
 
 
           <span
+
             className="
               inline-block
               bg-green-100
@@ -98,6 +110,7 @@ function Hero() {
               tracking-wider
               mb-6
             "
+
           >
 
             PROFESSIONAL TREE CARE
@@ -109,6 +122,7 @@ function Hero() {
 
 
           <h1
+
             className="
               text-5xl
               lg:text-6xl
@@ -116,13 +130,18 @@ function Hero() {
               leading-tight
               text-green-950
             "
+
           >
 
             Protecting Trees.
+
             <br />
 
+
             <span className="text-green-700">
+
               Creating Beautiful Landscapes.
+
             </span>
 
 
@@ -132,7 +151,9 @@ function Hero() {
 
 
 
+
           <p
+
             className="
               mt-6
               text-lg
@@ -140,6 +161,7 @@ function Hero() {
               max-w-xl
               leading-relaxed
             "
+
           >
 
             Guardian Tree Care provides reliable tree removal,
@@ -155,25 +177,31 @@ function Hero() {
 
 
           <div
+
             className="
               flex
               gap-4
               mt-8
               flex-wrap
             "
+
           >
 
 
 
             <button
 
-              onClick={() =>
+              onClick={() => {
+
                 document
                 .getElementById("contact")
                 ?.scrollIntoView({
+
                   behavior:"smooth"
-                })
-              }
+
+                });
+
+              }}
 
               className="
                 bg-green-700
@@ -185,6 +213,7 @@ function Hero() {
                 hover:bg-green-800
                 transition
               "
+
             >
 
               Get Free Quote
@@ -196,7 +225,9 @@ function Hero() {
 
 
             <a
+
               href="tel:+17165268741"
+
               className="
                 border-2
                 border-green-700
@@ -209,6 +240,7 @@ function Hero() {
                 hover:text-white
                 transition
               "
+
             >
 
               Call Now
@@ -220,6 +252,7 @@ function Hero() {
           </div>
 
 
+
         </div>
 
 
@@ -229,11 +262,15 @@ function Hero() {
 
 
 
-        {/* IMAGE COLLAGE */}
+
+        {/* Image Collage */}
+
+
 
 
 
         <div
+
           className="
             relative
             h-[620px]
@@ -241,20 +278,22 @@ function Hero() {
             items-center
             justify-center
           "
+
         >
 
 
 
 
 
-          {/* LEFT IMAGE */}
+          {/* Left Image */}
+
 
 
           <img
 
             src={hero1}
 
-            alt="Tree service"
+            alt="Professional tree care service"
 
             className="
               absolute
@@ -270,6 +309,8 @@ function Hero() {
               border-white
             "
 
+            loading="lazy"
+
           />
 
 
@@ -280,14 +321,15 @@ function Hero() {
 
 
 
-          {/* CENTER IMAGE */}
+          {/* Center Image */}
+
 
 
           <img
 
             src={hero2}
 
-            alt="Tree care"
+            alt="Tree maintenance work"
 
             className="
               relative
@@ -301,6 +343,8 @@ function Hero() {
               border-white
             "
 
+            loading="eager"
+
           />
 
 
@@ -311,7 +355,7 @@ function Hero() {
 
 
 
-          {/* RIGHT IMAGE */}
+          {/* Right Image */}
 
 
 
@@ -319,7 +363,7 @@ function Hero() {
 
             src={hero3}
 
-            alt="Landscape"
+            alt="Beautiful landscape trees"
 
             className="
               absolute
@@ -335,6 +379,8 @@ function Hero() {
               border-white
             "
 
+            loading="lazy"
+
           />
 
 
@@ -345,10 +391,12 @@ function Hero() {
 
 
 
-          {/* Badge */}
+          {/* Trust Badge */}
+
 
 
           <div
+
             className="
               absolute
               bottom-16
@@ -360,14 +408,17 @@ function Hero() {
               rounded-2xl
               shadow-xl
             "
+
           >
 
 
             <p
+
               className="
                 text-green-700
                 font-bold
               "
+
             >
 
               25+ Years
@@ -377,10 +428,12 @@ function Hero() {
 
 
             <p
+
               className="
                 text-sm
                 text-gray-600
               "
+
             >
 
               Trusted Tree Care
@@ -388,7 +441,9 @@ function Hero() {
             </p>
 
 
+
           </div>
+
 
 
 
@@ -400,7 +455,10 @@ function Hero() {
 
 
 
+
+
       </div>
+
 
 
 
@@ -408,7 +466,9 @@ function Hero() {
 
     </section>
 
+
   );
+
 
 }
 

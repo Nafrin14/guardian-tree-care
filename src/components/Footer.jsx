@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   FaPhone,
   FaEnvelope,
@@ -12,32 +12,52 @@ import {
 function Footer() {
 
 
-  const scrollToSection = (id) => {
+  const location = useLocation();
+
+
+
+  const scrollToSection = (id)=>{
+
+
+    if(
+      location.pathname === "/privacy" ||
+      location.pathname === "/terms"
+    ){
+
+      window.location.href = `/#${id}`;
+
+      return;
+
+    }
+
+
 
     const section = document.getElementById(id);
+
+
 
     if(section){
 
       section.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+
+        behavior:"smooth",
+
+        block:"start"
+
       });
 
     }
 
+
   };
+
+
 
 
   return (
 
-    <footer
-      className="
-        bg-green-950
-        text-white
-        pt-20
-        px-6
-      "
-    >
+
+    <footer className="bg-green-950 text-white pt-20 px-6">
 
 
       <div
@@ -55,37 +75,34 @@ function Footer() {
 
         {/* Brand */}
 
+
         <div>
 
+
           <h2 className="text-2xl font-bold">
+
             Guardian Tree Care
+
           </h2>
 
 
-          <p
-            className="
-              mt-5
-              text-gray-300
-              leading-relaxed
-            "
-          >
+
+          <p className="mt-5 text-gray-300 leading-relaxed">
+
             Professional tree care experts providing
             safe, reliable, and affordable solutions
             to protect your property and landscape.
+
           </p>
 
 
 
-          <div
-            className="
-              flex
-              gap-4
-              mt-6
-            "
-          >
+          <div className="flex gap-4 mt-6">
+
 
             <a
               href="#"
+              aria-label="Facebook"
               className="
                 w-10
                 h-10
@@ -98,12 +115,16 @@ function Footer() {
                 transition
               "
             >
+
               <FaFacebookF />
+
             </a>
+
 
 
             <a
               href="#"
+              aria-label="Instagram"
               className="
                 w-10
                 h-10
@@ -116,12 +137,16 @@ function Footer() {
                 transition
               "
             >
+
               <FaInstagram />
+
             </a>
+
 
 
             <a
               href="#"
+              aria-label="LinkedIn"
               className="
                 w-10
                 h-10
@@ -134,8 +159,11 @@ function Footer() {
                 transition
               "
             >
+
               <FaLinkedinIn />
+
             </a>
+
 
           </div>
 
@@ -148,73 +176,92 @@ function Footer() {
 
         {/* Quick Links */}
 
+
         <div>
 
-          <h3
-            className="
-              text-xl
-              font-bold
-              mb-6
-            "
-          >
+
+          <h3 className="text-xl font-bold mb-6">
+
             Quick Links
+
           </h3>
 
 
-          <ul
-            className="
-              space-y-4
-              text-gray-300
-            "
-          >
+
+          <ul className="space-y-4 text-gray-300">
+
 
             <li>
+
               <button
                 onClick={()=>scrollToSection("home")}
                 className="hover:text-green-400 transition"
               >
+
                 Home
+
               </button>
+
             </li>
 
 
+
             <li>
+
               <button
                 onClick={()=>scrollToSection("about")}
                 className="hover:text-green-400 transition"
               >
+
                 About Us
+
               </button>
+
             </li>
 
 
+
             <li>
+
               <button
                 onClick={()=>scrollToSection("services")}
                 className="hover:text-green-400 transition"
               >
+
                 Services
+
               </button>
+
             </li>
 
 
+
             <li>
+
               <button
                 onClick={()=>scrollToSection("testimonials")}
                 className="hover:text-green-400 transition"
               >
+
                 Testimonials
+
               </button>
+
             </li>
 
 
+
             <li>
+
               <button
                 onClick={()=>scrollToSection("contact")}
                 className="hover:text-green-400 transition"
               >
+
                 Contact
+
               </button>
+
             </li>
 
 
@@ -231,25 +278,20 @@ function Footer() {
 
         {/* Services */}
 
+
         <div>
 
-          <h3
-            className="
-              text-xl
-              font-bold
-              mb-6
-            "
-          >
+
+          <h3 className="text-xl font-bold mb-6">
+
             Services
+
           </h3>
 
 
-          <ul
-            className="
-              space-y-4
-              text-gray-300
-            "
-          >
+
+          <ul className="space-y-4 text-gray-300">
+
 
             <li>Tree Removal</li>
 
@@ -258,6 +300,7 @@ function Footer() {
             <li>Stump Grinding</li>
 
             <li>Emergency Tree Care</li>
+
 
           </ul>
 
@@ -272,25 +315,19 @@ function Footer() {
 
         {/* Contact */}
 
+
         <div>
 
-          <h3
-            className="
-              text-xl
-              font-bold
-              mb-6
-            "
-          >
+
+          <h3 className="text-xl font-bold mb-6">
+
             Contact Us
+
           </h3>
 
 
-          <ul
-            className="
-              space-y-5
-              text-gray-300
-            "
-          >
+
+          <ul className="space-y-5 text-gray-300">
 
 
             <li className="flex items-center gap-3">
@@ -305,6 +342,7 @@ function Footer() {
 
 
 
+
             <li className="flex items-center gap-3">
 
               <FaEnvelope className="text-green-400"/>
@@ -314,6 +352,7 @@ function Footer() {
               </span>
 
             </li>
+
 
 
 
@@ -345,68 +384,56 @@ function Footer() {
 
       {/* Bottom */}
 
+
       <div
         className="
           border-t
           border-green-800
+          py-6
+          flex
+          flex-col
+          md:flex-row
+          justify-between
+          items-center
+          gap-4
         "
       >
 
-        <div
-          className="
-            max-w-7xl
-            mx-auto
-            py-6
-            flex
-            flex-col
-            md:flex-row
-            justify-center
-            items-center
-            gap-6
-            text-gray-400
-            text-sm
-          "
-        >
 
+        <p className="text-gray-400 text-sm">
 
-          <p>
-            © {new Date().getFullYear()} Guardian Tree Care.
-            All Rights Reserved.
-          </p>
+          © {new Date().getFullYear()} Guardian Tree Care.
+          All Rights Reserved.
+
+        </p>
 
 
 
-          <div
-            className="
-              flex
-              gap-5
-              items-center
-            "
+
+        <div className="flex gap-8">
+
+
+          <Link
+            to="/privacy"
+            className="hover:text-green-400 transition"
           >
 
-            <Link
-              to="/privacy"
-              className="
-                hover:text-green-400
-                transition
-              "
-            >
-              Privacy Policy
-            </Link>
+            Privacy Policy
+
+          </Link>
 
 
-            <Link
-              to="/terms"
-              className="
-                hover:text-green-400
-                transition
-              "
-            >
-              Terms & Conditions
-            </Link>
 
 
-          </div>
+          <Link
+            to="/terms"
+            className="hover:text-green-400 transition"
+          >
+
+            Terms & Conditions
+
+          </Link>
+
 
 
         </div>
@@ -415,7 +442,9 @@ function Footer() {
       </div>
 
 
+
     </footer>
+
 
   );
 

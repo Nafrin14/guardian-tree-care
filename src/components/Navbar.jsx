@@ -1,21 +1,36 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { FaPhoneAlt, FaBars, FaTimes } from "react-icons/fa";
-import { useLocation, useNavigate } from "react-router-dom";
-import logo from "../assets/images/logo1.webp";
+import { useNavigate, useLocation } from "react-router-dom";
+import logo from "../assets/images/logo.webp";
 
 
 function Navbar() {
 
 
+  const [open, setOpen] = useState(false);
+
   const [active, setActive] = useState("home");
-  const [menuOpen, setMenuOpen] = useState(false);
+
 
   const location = useLocation();
+
   const navigate = useNavigate();
 
 
 
+  const sections = [
+    "home",
+    "about",
+    "services",
+    "testimonials",
+    "contact"
+  ];
 
+
+
+
+
+  // Active section detection
 
   useEffect(()=>{
 
@@ -27,10 +42,6 @@ function Navbar() {
       return;
 
     }
-
-
-
-    const sections = document.querySelectorAll("section[id]");
 
 
 
@@ -63,16 +74,30 @@ function Navbar() {
 
 
 
-    sections.forEach((section)=>{
 
-      observer.observe(section);
+
+    sections.forEach((id)=>{
+
+
+      const section = document.getElementById(id);
+
+
+      if(section){
+
+        observer.observe(section);
+
+      }
+
 
     });
 
 
 
-    return ()=>observer.disconnect();
+    return ()=>{
 
+      observer.disconnect();
+
+    };
 
 
   },[location.pathname]);
@@ -84,77 +109,74 @@ function Navbar() {
 
 
 
-  const navItems = [
-
-    {
-      name:"Home",
-      id:"home"
-    },
-
-    {
-      name:"About",
-      id:"about"
-    },
-
-    {
-      name:"Services",
-      id:"services"
-    },
-
-    {
-      name:"Testimonials",
-      id:"testimonials"
-    },
-
-    {
-      name:"Contact",
-      id:"contact"
-    }
-
-  ];
-
-
-
-
-
-
-
+  // Scroll function
 
   const scrollToSection = (id)=>{
 
 
-    setMenuOpen(false);
+    setOpen(false);
 
 
 
-    // Privacy / Terms page
+    const scroll = ()=>{
+
+
+      const section = document.getElementById(id);
+
+
+
+      if(section){
+
+
+        section.scrollIntoView({
+
+          behavior:"smooth",
+
+          block:"start"
+
+        });
+
+
+
+        window.history.replaceState(
+
+          null,
+
+          "",
+
+          `${window.location.pathname}#${id}`
+
+        );
+
+
+      }
+
+
+    };
+
+
+
+
+
 
     if(location.pathname !== "/"){
 
 
-      navigate("/");
+      navigate({
+
+        pathname:"/",
+
+        hash:`#${id}`
+
+      });
+
 
 
       setTimeout(()=>{
 
+        scroll();
 
-        const section = document.getElementById(id);
-
-
-
-        if(section){
-
-          section.scrollIntoView({
-
-            behavior:"smooth",
-            block:"start"
-
-          });
-
-        }
-
-
-      },300);
+      },500);
 
 
 
@@ -165,30 +187,11 @@ function Navbar() {
 
 
 
+    scroll();
 
-
-
-    const section = document.getElementById(id);
-
-
-
-    if(section){
-
-
-      section.scrollIntoView({
-
-        behavior:"smooth",
-        block:"start"
-
-      });
-
-
-    }
 
 
   };
-
-
 
 
 
@@ -236,17 +239,7 @@ function Navbar() {
         {/* Logo */}
 
 
-        <button
-
-          onClick={()=>scrollToSection("home")}
-
-          className="
-            flex
-            items-center
-            gap-3
-          "
-
-        >
+        <div className="flex items-center gap-3">
 
 
           <div
@@ -268,7 +261,7 @@ function Navbar() {
 
               src={logo}
 
-              alt="Guardian Tree Care"
+              alt="Guardian Tree Care Logo"
 
               className="
                 w-full
@@ -283,14 +276,12 @@ function Navbar() {
 
 
 
+
+
           <div>
 
 
-            <h2 className="
-              text-white
-              text-xl
-              font-extrabold
-            ">
+            <h2 className="text-white text-xl font-extrabold">
 
               Guardian
 
@@ -298,24 +289,17 @@ function Navbar() {
 
 
 
-            <p className="
-              text-green-300
-              text-xs
-              tracking-widest
-            ">
+            <p className="text-green-300 text-xs tracking-widest">
 
               TREE CARE
 
             </p>
 
 
-
           </div>
 
 
-
-        </button>
-
+        </div>
 
 
 
@@ -325,7 +309,6 @@ function Navbar() {
 
 
         {/* Desktop Menu */}
-
 
 
         <nav
@@ -341,35 +324,51 @@ function Navbar() {
 
 
           {
-            navItems.map((item)=>(
+
+            sections.map((item)=>(
 
 
               <button
 
-                key={item.id}
 
-                onClick={()=>scrollToSection(item.id)}
+                key={item}
+
+
+                onClick={()=>scrollToSection(item)}
+
 
                 className={`
 
-                  transition
+                  capitalize
                   font-medium
+                  transition
+
 
                   ${
-                    active === item.id
-                    ?
-                    "text-green-300"
-                    :
-                    "text-white"
-                  }
+                    active === item
 
-                  hover:text-green-300
+                    ? "text-green-300"
+
+                    : "text-white hover:text-green-300"
+
+                  }
 
                 `}
 
+
               >
 
-                {item.name}
+
+                {
+
+                  item === "testimonials"
+
+                  ? "Testimonials"
+
+                  : item
+
+                }
+
 
               </button>
 
@@ -389,32 +388,48 @@ function Navbar() {
 
 
 
-        {/* Desktop Quote */}
-
+        {/* Quote Button */}
 
 
         <button
 
+
           onClick={()=>scrollToSection("contact")}
 
+
+          aria-label="Get free quote"
+
+
           className="
+
             hidden
+
             md:flex
+
             items-center
+
             gap-2
+
             bg-green-500
+
             text-green-950
+
             px-6
+
             py-3
+
             rounded-full
+
             font-bold
-            hover:bg-green-400
-            transition
+
           "
+
 
         >
 
-          <FaPhoneAlt/>
+
+          <FaPhoneAlt />
+
 
           Get Quote
 
@@ -429,29 +444,43 @@ function Navbar() {
 
 
 
-        {/* Mobile Button */}
-
+        {/* Mobile Menu Button */}
 
 
         <button
 
-          onClick={()=>setMenuOpen(!menuOpen)}
+
+          onClick={()=>setOpen(!open)}
+
+
+          aria-label="Toggle menu"
+
 
           className="
+
             md:hidden
+
             text-white
+
             text-2xl
+
           "
+
 
         >
 
+
           {
 
-            menuOpen
+            open
+
             ?
-            <FaTimes/>
+
+            <FaTimes />
+
             :
-            <FaBars/>
+
+            <FaBars />
 
           }
 
@@ -473,20 +502,25 @@ function Navbar() {
       {/* Mobile Menu */}
 
 
-
       {
 
-        menuOpen && (
+        open && (
 
 
           <div
 
             className="
+
               md:hidden
+
               bg-green-950
+
               px-6
+
               pb-6
-              space-y-3
+
+              space-y-4
+
             "
 
           >
@@ -494,36 +528,47 @@ function Navbar() {
 
             {
 
-              navItems.map((item)=>(
+              sections.map((item)=>(
 
 
                 <button
 
-                  key={item.id}
 
-                  onClick={()=>scrollToSection(item.id)}
+                  key={item}
 
-                  className={`
+
+                  onClick={()=>scrollToSection(item)}
+
+
+                  className="
 
                     block
+
                     w-full
+
                     text-left
-                    py-2
-                    font-medium
 
-                    ${
-                      active===item.id
-                      ?
-                      "text-green-300"
-                      :
-                      "text-white"
-                    }
+                    capitalize
 
-                  `}
+                    text-white
+
+                    hover:text-green-300
+
+                  "
+
 
                 >
 
-                  {item.name}
+
+                  {
+
+                    item === "testimonials"
+
+                    ? "Testimonials"
+
+                    : item
+
+                  }
 
 
                 </button>
@@ -534,55 +579,19 @@ function Navbar() {
             }
 
 
-
-
-            <button
-
-              onClick={()=>scrollToSection("contact")}
-
-              className="
-                w-full
-                bg-green-500
-                text-green-950
-                py-3
-                rounded-full
-                font-bold
-                flex
-                justify-center
-                items-center
-                gap-2
-              "
-
-            >
-
-              <FaPhoneAlt/>
-
-              Get Quote
-
-
-            </button>
-
-
-
           </div>
 
 
         )
-
 
       }
 
 
 
 
-      <div
 
-        className="
-          h-1
-          bg-green-500
-        "
 
-      />
+      <div className="h-1 bg-green-500"></div>
 
 
 
@@ -591,8 +600,8 @@ function Navbar() {
 
   );
 
-}
 
+}
 
 
 export default Navbar;
