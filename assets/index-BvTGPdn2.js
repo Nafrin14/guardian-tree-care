@@ -268,12 +268,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               `,children:`25+ Years`}),(0,A.jsx)(`p`,{className:`\r
                 text-sm\r
                 text-gray-600\r
-              `,children:`Trusted Tree Care`})]})]})]})]})}var br=`/guardian-tree-care/assets/about-C1jC0eai.webp`;function xr(){return(0,A.jsx)(`section`,{id:`about`,className:`\r
-        py-24\r
-        px-6\r
-        bg-white\r
-        scroll-mt-24\r
-      `,children:(0,A.jsxs)(`div`,{className:`\r
+              `,children:`Trusted Tree Care`})]})]})]})]})}var br=`/guardian-tree-care/assets/about-C1jC0eai.webp`;function xr(){return(0,A.jsx)(`section`,{id:`about`,className:` py-24 px-6 bg-white scroll-mt-24`,children:(0,A.jsxs)(`div`,{className:`\r
         max-w-6xl\r
         mx-auto\r
         grid\r
