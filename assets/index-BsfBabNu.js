@@ -112,8 +112,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             space-y-8\r
             text-gray-700\r
             leading-relaxed\r
-          `,children:[(0,A.jsx)(`p`,{children:`Welcome to Guardian Tree Care. By accessing this website or using our services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please do not use our website or services.`}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`1. Business Identity`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`These Terms and Conditions govern your use of services provided by Guardian Tree Care.`}),(0,A.jsx)(`p`,{children:`Contact: +1 716-526-8741 | info@guardiantreecare.com`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`2. Age Requirement (18+)`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`By using this website or requesting our services, you confirm that you are at least 18 years of age.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`3. Terminology`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`"Client," "You," and "Your" refers to the user of this website. "Company," "We," "Our," and "Us" refers to Guardian Tree Care.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`4. SMS Messaging Terms of Service`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`By providing your phone number and submitting our contact forms, you agree to receive SMS communications from Guardian Tree Care.`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`Messages may include:`}),(0,A.jsxs)(`ul`,{className:`list-disc ml-6 mt-3 space-y-2`,children:[(0,A.jsx)(`li`,{children:`Free estimate confirmations`}),(0,A.jsx)(`li`,{children:`Appointment reminders`}),(0,A.jsx)(`li`,{children:`Project updates`}),(0,A.jsx)(`li`,{children:`Customer support communications`}),(0,A.jsx)(`li`,{children:`Service-related promotions`})]}),(0,A.jsx)(`p`,{className:`mt-3`,children:`Message frequency varies depending on your service activity. Message and data rates may apply.`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`To stop receiving SMS messages, reply STOP to any message. For help, reply HELP or contact us directly.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`5. Cookies`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`We use cookies and similar technologies to improve website functionality and user experience.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`6. Intellectual Property & License`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`All website content, including text, images, and materials, belongs to Guardian Tree Care unless otherwise stated. Content may not be copied or redistributed without permission.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`7. Comments & User Content`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`Guardian Tree Care reserves the right to remove inappropriate or harmful user-generated content.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`8. Content Liability`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`We are not responsible for external websites linked from our website or any third-party content.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`9. Disclaimer`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`Guardian Tree Care provides services with professional care, but we are not responsible for damages or losses resulting from misuse of our website or services.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`10. Changes to These Terms`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`We reserve the right to update these Terms and Conditions. Updated versions will be posted on this page with a revised date.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`11. Contact Information`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`Guardian Tree Care`}),(0,A.jsx)(`p`,{children:`Phone: 716-451-8733`})]})]})]})})}function gr(){let e=ht(),t=_t(),[n,r]=(0,x.useState)(!1),[i,a]=(0,x.useState)(!1),o=n=>{if(e.pathname===`/privacy`||e.pathname===`/terms`){t(`/#${n}`);return}let r=document.getElementById(n);r&&(r.scrollIntoView({behavior:`smooth`,block:`start`}),window.history.replaceState(null,``,`/#${n}`))};return(0,A.jsxs)(`footer`,{className:`bg-green-950 text-white`,children:[(0,A.jsxs)(`div`,{className:`max-w-7xl mx-auto px-6 py-12`,children:[(0,A.jsxs)(`div`,{className:`grid grid-cols-1 md:grid-cols-4 gap-10`,children:[(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold mb-4`,children:`Guardian Tree Care`}),(0,A.jsx)(`p`,{className:`text-green-100 leading-relaxed`,children:`Professional tree care experts providing safe, reliable, and affordable solutions to protect your property and landscape.`}),(0,A.jsxs)(`div`,{className:`flex gap-3 mt-6`,children:[(0,A.jsx)(`a`,{href:`https://www.facebook.com/`,target:`_blank`,rel:`noopener noreferrer`,"aria-label":`Guardian Tree Care on Facebook`,className:`\r
-                  w-10 h-10\r
+          `,children:[(0,A.jsx)(`p`,{children:`Welcome to Guardian Tree Care. By accessing this website or using our services, you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please do not use our website or services.`}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`1. Business Identity`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`These Terms and Conditions govern your use of services provided by Guardian Tree Care.`}),(0,A.jsx)(`p`,{children:`Contact: +1 716-526-8741 | info@guardiantreecare.com`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`2. Age Requirement (18+)`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`By using this website or requesting our services, you confirm that you are at least 18 years of age.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`3. Terminology`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`"Client," "You," and "Your" refers to the user of this website. "Company," "We," "Our," and "Us" refers to Guardian Tree Care.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`4. SMS Messaging Terms of Service`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`By providing your phone number and submitting our contact forms, you agree to receive SMS communications from Guardian Tree Care.`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`Messages may include:`}),(0,A.jsxs)(`ul`,{className:`list-disc ml-6 mt-3 space-y-2`,children:[(0,A.jsx)(`li`,{children:`Free estimate confirmations`}),(0,A.jsx)(`li`,{children:`Appointment reminders`}),(0,A.jsx)(`li`,{children:`Project updates`}),(0,A.jsx)(`li`,{children:`Customer support communications`}),(0,A.jsx)(`li`,{children:`Service-related promotions`})]}),(0,A.jsx)(`p`,{className:`mt-3`,children:`Message frequency varies depending on your service activity. Message and data rates may apply.`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`To stop receiving SMS messages, reply STOP to any message. For help, reply HELP or contact us directly.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`5. Cookies`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`We use cookies and similar technologies to improve website functionality and user experience.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`6. Intellectual Property & License`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`All website content, including text, images, and materials, belongs to Guardian Tree Care unless otherwise stated. Content may not be copied or redistributed without permission.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`7. Comments & User Content`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`Guardian Tree Care reserves the right to remove inappropriate or harmful user-generated content.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`8. Content Liability`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`We are not responsible for external websites linked from our website or any third-party content.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`9. Disclaimer`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`Guardian Tree Care provides services with professional care, but we are not responsible for damages or losses resulting from misuse of our website or services.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`10. Changes to These Terms`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`We reserve the right to update these Terms and Conditions. Updated versions will be posted on this page with a revised date.`})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold text-green-900`,children:`11. Contact Information`}),(0,A.jsx)(`p`,{className:`mt-3`,children:`Guardian Tree Care`}),(0,A.jsx)(`p`,{children:`Phone: 716-451-8733`})]})]})]})})}function gr(){let e=ht(),t=_t(),[n,r]=(0,x.useState)(!1),[i,a]=(0,x.useState)(!1),o=n=>{if(e.pathname===`/privacy`||e.pathname===`/terms`){t(`/`),setTimeout(()=>{let e=document.getElementById(n);e&&e.scrollIntoView({behavior:`smooth`,block:`start`})},300);return}let r=document.getElementById(n);r&&r.scrollIntoView({behavior:`smooth`,block:`start`}),window.history.replaceState(null,``,window.location.pathname)};return(0,A.jsxs)(`footer`,{className:`bg-green-950 text-white`,children:[(0,A.jsxs)(`div`,{className:`max-w-7xl mx-auto px-6 py-12`,children:[(0,A.jsxs)(`div`,{className:`grid grid-cols-1 md:grid-cols-4 gap-10`,children:[(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h2`,{className:`text-2xl font-bold mb-4`,children:`Guardian Tree Care`}),(0,A.jsx)(`p`,{className:`text-green-100 leading-relaxed`,children:`Professional tree care experts providing safe, reliable, and affordable solutions to protect your property and landscape.`}),(0,A.jsxs)(`div`,{className:`flex gap-3 mt-6`,children:[(0,A.jsx)(`a`,{href:`https://www.facebook.com/`,target:`_blank`,rel:`noopener noreferrer`,"aria-label":`Guardian Tree Care on Facebook`,className:`\r
+                  w-10\r
+                  h-10\r
                   rounded-full\r
                   bg-green-800\r
                   flex\r
@@ -122,7 +123,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                   hover:bg-green-600\r
                   transition\r
                 `,children:(0,A.jsx)(tr,{"aria-hidden":`true`})}),(0,A.jsx)(`a`,{href:`https://www.instagram.com/`,target:`_blank`,rel:`noopener noreferrer`,"aria-label":`Guardian Tree Care on Instagram`,className:`\r
-                  w-10 h-10\r
+                  w-10\r
+                  h-10\r
                   rounded-full\r
                   bg-green-800\r
                   flex\r
@@ -131,7 +133,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                   hover:bg-green-600\r
                   transition\r
                 `,children:(0,A.jsx)(er,{"aria-hidden":`true`})}),(0,A.jsx)(`a`,{href:`https://www.linkedin.com/`,target:`_blank`,rel:`noopener noreferrer`,"aria-label":`Guardian Tree Care on LinkedIn`,className:`\r
-                  w-10 h-10\r
+                  w-10\r
+                  h-10\r
                   rounded-full\r
                   bg-green-800\r
                   flex\r
@@ -139,7 +142,27 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                   justify-center\r
                   hover:bg-green-600\r
                   transition\r
-                `,children:(0,A.jsx)($n,{"aria-hidden":`true`})})]})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h3`,{className:`text-lg font-bold mb-4`,children:`Quick Links`}),(0,A.jsxs)(`div`,{className:`space-y-3`,children:[(0,A.jsx)(`button`,{type:`button`,onClick:()=>o(`home`),className:`block hover:text-green-400 transition`,children:`Home`}),(0,A.jsx)(`button`,{type:`button`,onClick:()=>o(`about`),className:`block hover:text-green-400 transition`,children:`About`}),(0,A.jsx)(`button`,{type:`button`,onClick:()=>o(`services`),className:`block hover:text-green-400 transition`,children:`Services`}),(0,A.jsx)(`button`,{type:`button`,onClick:()=>o(`testimonials`),className:`block hover:text-green-400 transition`,children:`Testimonials`}),(0,A.jsx)(`button`,{type:`button`,onClick:()=>o(`contact`),className:`block hover:text-green-400 transition`,children:`Contact`})]})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h3`,{className:`text-lg font-bold mb-4`,children:`Services`}),(0,A.jsxs)(`div`,{className:`space-y-3 text-green-100`,children:[(0,A.jsx)(`p`,{children:`Tree Removal`}),(0,A.jsx)(`p`,{children:`Tree Trimming`}),(0,A.jsx)(`p`,{children:`Tree Pruning`}),(0,A.jsx)(`p`,{children:`Stump Grinding`}),(0,A.jsx)(`p`,{children:`Emergency Tree Services`})]})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h3`,{className:`text-lg font-bold mb-4`,children:`Contact`}),(0,A.jsxs)(`div`,{className:`space-y-4 text-green-100`,children:[(0,A.jsxs)(`div`,{className:`flex items-start gap-3`,children:[(0,A.jsx)(ar,{className:`mt-1`,"aria-hidden":`true`}),(0,A.jsx)(`span`,{children:`716-451-8733`})]}),(0,A.jsxs)(`div`,{className:`flex items-start gap-3`,children:[(0,A.jsx)(sr,{className:`mt-1`,"aria-hidden":`true`}),(0,A.jsx)(`span`,{children:`9950 County Rd, Clarence, Buffalo`})]})]})]})]}),(0,A.jsxs)(`div`,{className:`\r
+                `,children:(0,A.jsx)($n,{"aria-hidden":`true`})})]})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h3`,{className:`text-lg font-bold mb-4`,children:`Quick Links`}),(0,A.jsxs)(`div`,{className:`space-y-3`,children:[(0,A.jsx)(`button`,{type:`button`,onClick:()=>o(`home`),className:`\r
+                  block\r
+                  hover:text-green-400\r
+                  transition\r
+                `,children:`Home`}),(0,A.jsx)(`button`,{type:`button`,onClick:()=>o(`about`),className:`\r
+                  block\r
+                  hover:text-green-400\r
+                  transition\r
+                `,children:`About`}),(0,A.jsx)(`button`,{type:`button`,onClick:()=>o(`services`),className:`\r
+                  block\r
+                  hover:text-green-400\r
+                  transition\r
+                `,children:`Services`}),(0,A.jsx)(`button`,{type:`button`,onClick:()=>o(`testimonials`),className:`\r
+                  block\r
+                  hover:text-green-400\r
+                  transition\r
+                `,children:`Testimonials`}),(0,A.jsx)(`button`,{type:`button`,onClick:()=>o(`contact`),className:`\r
+                  block\r
+                  hover:text-green-400\r
+                  transition\r
+                `,children:`Contact`})]})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h3`,{className:`text-lg font-bold mb-4`,children:`Services`}),(0,A.jsxs)(`div`,{className:`space-y-3 text-green-100`,children:[(0,A.jsx)(`p`,{children:`Tree Removal`}),(0,A.jsx)(`p`,{children:`Tree Trimming`}),(0,A.jsx)(`p`,{children:`Tree Pruning`}),(0,A.jsx)(`p`,{children:`Stump Grinding`}),(0,A.jsx)(`p`,{children:`Emergency Tree Services`})]})]}),(0,A.jsxs)(`div`,{children:[(0,A.jsx)(`h3`,{className:`text-lg font-bold mb-4`,children:`Contact`}),(0,A.jsxs)(`div`,{className:`space-y-4 text-green-100`,children:[(0,A.jsxs)(`div`,{className:`flex items-start gap-3`,children:[(0,A.jsx)(ar,{className:`mt-1`,"aria-hidden":`true`}),(0,A.jsx)(`a`,{href:`tel:+17164518733`,"aria-label":`Call Guardian Tree Care at 716-451-8733`,className:`hover:text-green-400 transition`,children:`716-451-8733`})]}),(0,A.jsxs)(`div`,{className:`flex items-start gap-3`,children:[(0,A.jsx)(sr,{className:`mt-1`,"aria-hidden":`true`}),(0,A.jsx)(`span`,{children:`9950 County Rd, Clarence, Buffalo`})]})]})]})]}),(0,A.jsxs)(`div`,{className:`\r
             border-t\r
             border-green-800\r
             mt-10\r
@@ -152,7 +175,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             gap-4\r
             text-sm\r
             text-green-200\r
-          `,children:[(0,A.jsxs)(`p`,{children:[`© `,new Date().getFullYear(),` Guardian Tree Care. All Rights Reserved.`]}),(0,A.jsxs)(`div`,{className:`flex gap-6`,children:[(0,A.jsx)(`button`,{type:`button`,onClick:()=>r(!0),className:`hover:text-green-400 transition`,children:`Privacy Policy`}),(0,A.jsx)(`button`,{type:`button`,onClick:()=>a(!0),className:`hover:text-green-400 transition`,children:`Terms & Conditions`})]})]})]}),n&&(0,A.jsx)(`div`,{className:`\r
+          `,children:[(0,A.jsxs)(`p`,{children:[`© `,new Date().getFullYear(),` Guardian Tree Care. All Rights Reserved.`]}),(0,A.jsxs)(`div`,{className:`flex gap-6`,children:[(0,A.jsx)(`button`,{type:`button`,onClick:()=>r(!0),className:`\r
+                hover:text-green-400\r
+                transition\r
+              `,children:`Privacy Policy`}),(0,A.jsx)(`button`,{type:`button`,onClick:()=>a(!0),className:`\r
+                hover:text-green-400\r
+                transition\r
+              `,children:`Terms & Conditions`})]})]})]}),n&&(0,A.jsx)(`div`,{className:`\r
             fixed\r
             inset-0\r
             bg-black/60\r
@@ -165,11 +194,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               bg-white\r
               text-green-950\r
               rounded-2xl\r
-              max-w-4xl\r
               w-full\r
-              max-h-[90vh]\r
+              max-w-2xl\r
+              max-h-[80vh]\r
               overflow-y-auto\r
-              p-6\r
+              p-5\r
+              md:p-6\r
+              shadow-2xl\r
             `,onClick:e=>e.stopPropagation(),children:(0,A.jsx)(mr,{})})}),i&&(0,A.jsx)(`div`,{className:`\r
             fixed\r
             inset-0\r
@@ -183,11 +214,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               bg-white\r
               text-green-950\r
               rounded-2xl\r
-              max-w-4xl\r
               w-full\r
-              max-h-[90vh]\r
+              max-w-2xl\r
+              max-h-[80vh]\r
               overflow-y-auto\r
-              p-6\r
+              p-5\r
+              md:p-6\r
+              shadow-2xl\r
             `,onClick:e=>e.stopPropagation(),children:(0,A.jsx)(hr,{})})})]})}var _r=`/guardian-tree-care/assets/hero1-NBL6PsxO.webp`,vr=`/guardian-tree-care/assets/hero2-BcfffaQu.webp`,yr=`/guardian-tree-care/assets/hero3-DDXe9uE2.webp`;function br(){return(0,A.jsxs)(`section`,{id:`home`,className:`\r
         relative\r
         overflow-hidden\r
