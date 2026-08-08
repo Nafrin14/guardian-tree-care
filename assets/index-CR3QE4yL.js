@@ -195,13 +195,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                 z-10\r
                 hover:bg-green-200\r
                 transition\r
-              `,children:(0,j.jsx)(rr,{"aria-hidden":`true`})}),(0,j.jsx)(mr,{})]})})]})}var gr=`/guardian-tree-care/assets/hero1-NBL6PsxO.webp`,_r=`/guardian-tree-care/assets/hero2-BcfffaQu.webp`,vr=`/guardian-tree-care/assets/hero3-DDXe9uE2.webp`;function yr(){return(0,j.jsxs)(`section`,{id:`home`,className:`\r
-        relative\r
-        overflow-visible\r
-        py-20\r
-        px-6\r
-        bg-white\r
-      `,children:[(0,j.jsx)(`div`,{className:`\r
+              `,children:(0,j.jsx)(rr,{"aria-hidden":`true`})}),(0,j.jsx)(mr,{})]})})]})}var gr=`/guardian-tree-care/assets/hero1-NBL6PsxO.webp`,_r=`/guardian-tree-care/assets/hero2-BcfffaQu.webp`,vr=`/guardian-tree-care/assets/hero3-DDXe9uE2.webp`;function yr(){return(0,j.jsxs)(`section`,{id:`home`,className:`relative overflow-hidden`,children:[(0,j.jsx)(`div`,{className:`\r
           absolute\r
           bottom-0\r
           -left-20\r
@@ -211,7 +205,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
           rounded-full\r
           opacity-30\r
           blur-3xl\r
-        `}),(0,j.jsxs)(`div`,{className:`\r
+        `,"aria-hidden":`true`}),(0,j.jsxs)(`div`,{className:`\r
           relative\r
           z-10\r
           max-w-7xl\r
@@ -250,7 +244,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               flex-wrap\r
               relative\r
               z-[999]\r
-            `,children:[(0,j.jsx)(`button`,{type:`button`,onClick:()=>document.getElementById(`contact`)?.scrollIntoView({behavior:`smooth`}),className:`\r
+            `,children:[(0,j.jsx)(`button`,{type:`button`,onClick:()=>{document.getElementById(`contact`)?.scrollIntoView({behavior:`smooth`,block:`start`})},className:`\r
                 inline-flex\r
                 items-center\r
                 justify-center\r
@@ -264,7 +258,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
                 hover:!bg-green-800\r
                 transition\r
                 cursor-pointer\r
-              `,children:`Get Free Quote`}),(0,j.jsx)(`a`,{href:`tel:+17165268741`,className:`\r
+              `,children:`Get Free Quote`}),(0,j.jsx)(`a`,{href:`tel:+17165268741`,"aria-label":`Call Guardian Tree Care`,className:`\r
                 inline-flex\r
                 items-center\r
                 justify-center\r
@@ -284,7 +278,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
             flex\r
             items-center\r
             justify-center\r
-          `,children:[(0,j.jsx)(`img`,{src:gr,alt:`Professional tree care service`,className:`\r
+          `,children:[(0,j.jsx)(`img`,{src:gr,alt:`Professional tree care service`,width:`224`,height:`288`,loading:`lazy`,decoding:`async`,className:`\r
               absolute\r
               left-0\r
               top-36\r
@@ -296,7 +290,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               rotate-[-10deg]\r
               border-8\r
               border-white\r
-            `,loading:`lazy`,decoding:`async`}),(0,j.jsx)(`img`,{src:_r,alt:`Tree maintenance work`,className:`\r
+            `}),(0,j.jsx)(`img`,{src:_r,alt:`Guardian Tree Care professional tree maintenance`,width:`320`,height:`540`,loading:`eager`,fetchPriority:`high`,decoding:`async`,className:`\r
               relative\r
               z-20\r
               w-80\r
@@ -306,7 +300,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               shadow-2xl\r
               border-8\r
               border-white\r
-            `,loading:`eager`,fetchPriority:`high`,decoding:`async`}),(0,j.jsx)(`img`,{src:vr,alt:`Beautiful landscape trees`,className:`\r
+            `}),(0,j.jsx)(`img`,{src:vr,alt:`Beautiful landscape with trees`,width:`224`,height:`288`,loading:`lazy`,decoding:`async`,className:`\r
               absolute\r
               right-0\r
               top-24\r
@@ -318,7 +312,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
               rotate-[10deg]\r
               border-8\r
               border-white\r
-            `,loading:`lazy`,decoding:`async`})]})]})]})}var br=`/guardian-tree-care/assets/about-C1jC0eai.webp`;function xr(){return(0,j.jsx)(`section`,{id:`about`,className:` py-24 px-6 bg-white scroll-mt-24`,children:(0,j.jsxs)(`div`,{className:`max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center`,children:[(0,j.jsx)(`div`,{className:`relative`,children:(0,j.jsx)(`img`,{src:br,alt:`Guardian Tree Care team`,className:`rounded-[40px] shadow-xl w-full h-[450px] object-cover`,loading:`lazy`,decoding:`async`})}),(0,j.jsxs)(`div`,{children:[(0,j.jsx)(`span`,{className:`inline-block bg-green-100 text-green-700 px-5 py-2 rounded-full text-sm font-bold tracking-wider mb-5`,children:`ABOUT US`}),(0,j.jsx)(`h2`,{className:`text-4xl lg:text-5xl font-extrabold text-green-950 leading-tight`,children:`Trusted Tree Care Experts For Your Property`}),(0,j.jsx)(`p`,{className:`mt-6 text-gray-600 text-lg leading-relaxed`,children:`Guardian Tree Care delivers professional and dependable tree services with safety, quality, and customer satisfaction as our priority. Our experienced team helps maintain healthy trees and beautiful outdoor spaces.`}),(0,j.jsxs)(`div`,{className:`grid grid-cols-2 gap-6 mt-8`,children:[(0,j.jsxs)(`div`,{className:` bg-green-50 rounded-2xl p-5`,children:[(0,j.jsx)(`p`,{className:`\r
+            `})]})]})]})}var br=`/guardian-tree-care/assets/about-C1jC0eai.webp`;function xr(){return(0,j.jsx)(`section`,{id:`about`,className:` py-24 px-6 bg-white scroll-mt-24`,children:(0,j.jsxs)(`div`,{className:`max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center`,children:[(0,j.jsx)(`div`,{className:`relative`,children:(0,j.jsx)(`img`,{src:br,alt:`Guardian Tree Care team`,className:`rounded-[40px] shadow-xl w-full h-[450px] object-cover`,loading:`lazy`,decoding:`async`})}),(0,j.jsxs)(`div`,{children:[(0,j.jsx)(`span`,{className:`inline-block bg-green-100 text-green-700 px-5 py-2 rounded-full text-sm font-bold tracking-wider mb-5`,children:`ABOUT US`}),(0,j.jsx)(`h2`,{className:`text-4xl lg:text-5xl font-extrabold text-green-950 leading-tight`,children:`Trusted Tree Care Experts For Your Property`}),(0,j.jsx)(`p`,{className:`mt-6 text-gray-600 text-lg leading-relaxed`,children:`Guardian Tree Care delivers professional and dependable tree services with safety, quality, and customer satisfaction as our priority. Our experienced team helps maintain healthy trees and beautiful outdoor spaces.`}),(0,j.jsxs)(`div`,{className:`grid grid-cols-2 gap-6 mt-8`,children:[(0,j.jsxs)(`div`,{className:` bg-green-50 rounded-2xl p-5`,children:[(0,j.jsx)(`p`,{className:`\r
                 text-3xl\r
                 font-bold\r
                 text-green-700\r
